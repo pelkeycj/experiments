@@ -1,13 +1,17 @@
 # use cryptowatch api?
 
-1. Phoenix API test	
-	- get data from kraken
-		- all exchange rates
-	- store in db
+1. Phoenix API test	- COMPLETE
+	- get data from cryptowatch api
+		- market data: exchange, pair, rate
+	- upsert into db
 
-2. Phoenix channel push to connected 
+2. Phoenix Scheduled job test 	- COMPLETE
+	use Quantum to schedule a job to run every x seconds
 
-3. React front end - basic components and pages
+
+3. React front end - basic components and pages?
+
+
 
  
 
