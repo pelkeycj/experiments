@@ -1,0 +1,13 @@
+# use cryptowatch api?
+
+1. Phoenix API test	
+	- get data from kraken
+		- all exchange rates
+	- store in db
+
+2. Phoenix channel push to connected 
+
+3. React front end - basic components and pages
+
+ 
+
