@@ -140,7 +140,7 @@ defmodule ApiTest.Currency do
     |> Enum.map(fn asset ->
         asset.name
         end)
-    |> Enum.join(", ")
+    |> Enum.join(",")
     #|> (fn assets ->
     #  Poison.encode(%{"Pair" => assets})
     #end).()

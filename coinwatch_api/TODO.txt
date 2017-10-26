@@ -1,0 +1,7 @@
+plan: 
+	ExchangePair JSON :
+		exchange
+		pair
+		rate
+
+	update rate every so often
