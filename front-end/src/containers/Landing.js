@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import Navigation from './Navigation';
+import Navigation from '../components/Navigation';
 
 class Landing extends React.Component {
     render() {
