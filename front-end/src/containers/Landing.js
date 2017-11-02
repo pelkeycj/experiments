@@ -4,16 +4,17 @@
 
 import React from 'react';
 import Navigation from '../components/Navigation';
+import Banner from "../components/Banner";
 
 class Landing extends React.Component {
     render() {
         return (
             <div>
                 <Navigation/>
-                Landed
+                <Banner/>
             </div>
             // Landing Navigation
-            // SectionA
+            // Banner
             // SectionB
 
         );

@@ -4,17 +4,36 @@
 
 import React from 'react';
 import {Link} from 'react-router-dom';
-import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { css, StyleSheet } from 'aphrodite';
+import Colors from '../static/colors';
 
-//TODO styles
+
+const styles = StyleSheet.create({
+    nav: {
+        background: Colors.primary,
+        borderWidth: '0',
+    },
+
+    link: {
+        color: 'white',
+        textDecoration: 'none',
+        ':hover': {
+            color: 'black',
+            textDecoration: 'none',
+        }
+    }
+
+});
+
 class Navigation extends React.Component {
 
     render() {
         return (
-            <Navbar inverse collapseOnSelect fixedTop>
+            <Navbar inverse collapseOnSelect fixedTop className={css(styles.nav)}>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <Link to="/">
+                        <Link to="/" className={(css(styles.link))}>
                             Coinwatch
                         </Link>
                     </Navbar.Brand>
@@ -24,12 +43,12 @@ class Navigation extends React.Component {
 
                     <Nav pullRight>
                         <NavItem>
-                                <Link to="/demo">
+                                <Link to="/demo" className={css(styles.link)}>
                                     Demo
                                 </Link>
                         </NavItem>
                         <NavItem>
-                            <Link to="/">
+                            <Link to="/" className={css(styles.link)}>
                                 Sign In
                             </Link>
                         </NavItem>
