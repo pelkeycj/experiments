@@ -12,14 +12,15 @@ import Strings from '../static/strings';
 import Images from '../static/images';
 
 const styles = StyleSheet.create({
-    infoSection: {
+    content: {
+        marginBottom: '100px',
     }
 });
 
 class Landing extends React.Component {
     render() {
         return (
-            <div>
+            <div className={css(styles.content)}>
                 <Navigation/>
                 <Banner/>
                 <Container>
