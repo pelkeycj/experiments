@@ -42,11 +42,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Landing.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Landing.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/containers/Landing.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="400">
-                  <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+                <state relative-caret-position="520">
+                  <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
                   <folding>
                     <element signature="e#43#69#0" expanded="true" />
                   </folding>
@@ -54,14 +54,15 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="images.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/static/images.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-                  <folding>
-                    <marker date="1509640282504" expanded="false" signature="49:75" ph="..." />
-                  </folding>
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="0">
+                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                    <folding />
+                  </first_editor>
+                  <second_editor />
                 </state>
               </provider>
             </entry>
@@ -198,7 +199,6 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/styles/colors.js" />
-        <option value="$PROJECT_DIR$/src/components/Navigation.js" />
         <option value="$PROJECT_DIR$/src/static/colors.js" />
         <option value="$PROJECT_DIR$/src/components/SectionA.js" />
         <option value="$PROJECT_DIR$/src/static/Images.js" />
@@ -214,6 +214,7 @@
         <option value="$PROJECT_DIR$/src/components/Banner.js" />
         <option value="$PROJECT_DIR$/src/components/InfoSection.js" />
         <option value="$PROJECT_DIR$/src/containers/Landing.js" />
+        <option value="$PROJECT_DIR$/src/components/Navigation.js" />
       </list>
     </option>
   </component>
@@ -489,16 +490,15 @@
       <workItem from="1509393219829" duration="4587000" />
       <workItem from="1509593033085" duration="11699000" />
       <workItem from="1509649071799" duration="8642000" />
-      <workItem from="1509662189720" duration="11774000" />
+      <workItem from="1509662189720" duration="12385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39062000" />
+    <option name="totallyTimeSpent" value="39673000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1453125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -527,7 +527,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -621,7 +621,7 @@
         <state relative-caret-position="20">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <marker date="1509640282504" expanded="false" signature="49:75" ph="..." />
+            <marker date="1509674557981" expanded="false" signature="49:75" ph="..." />
           </folding>
         </state>
       </provider>
@@ -702,8 +702,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1509673297670" expanded="true" signature="84:245" ph="{&quot;react&quot;: &quot;^16.0.0&quot;...}" />
-            <marker date="1509673297670" expanded="true" signature="84:337" ph="{&quot;react&quot;: &quot;^16.0.0&quot;...}" />
+            <marker date="1509674557977" expanded="true" signature="84:245" ph="{&quot;react&quot;: &quot;^16.0.0&quot;...}" />
+            <marker date="1509674557977" expanded="true" signature="84:337" ph="{&quot;react&quot;: &quot;^16.0.0&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -744,8 +744,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1509673297670" expanded="true" signature="84:245" ph="{&quot;react&quot;: &quot;^16.0.0&quot;...}" />
-            <marker date="1509673297670" expanded="true" signature="84:337" ph="{&quot;react&quot;: &quot;^16.0.0&quot;...}" />
+            <marker date="1509674557977" expanded="true" signature="84:245" ph="{&quot;react&quot;: &quot;^16.0.0&quot;...}" />
+            <marker date="1509674557977" expanded="true" signature="84:337" ph="{&quot;react&quot;: &quot;^16.0.0&quot;...}" />
           </folding>
         </state>
       </provider>
@@ -793,7 +793,7 @@
         <state relative-caret-position="20">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <marker date="1509640282504" expanded="false" signature="49:75" ph="..." />
+            <marker date="1509674557981" expanded="false" signature="49:75" ph="..." />
           </folding>
         </state>
       </provider>
@@ -808,16 +808,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -890,14 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Navigation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/InfoSection.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="560">
@@ -908,13 +890,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Navigation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Landing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="22" column="47" lean-forward="false" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        <state relative-caret-position="520">
+          <caret line="28" column="42" lean-forward="false" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
           <folding>
             <element signature="e#43#69#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
