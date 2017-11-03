@@ -27,7 +27,14 @@ const styles = StyleSheet.create({
         padding: '10%',
     },
 
-    image: {
+    imageBox: {
+        position: 'absolute',
+        top: '0',
+        bottom: '0',
+        left: '0',
+        right: '0',
+        width: '90%',
+        height: '90%',
 
     }
 
@@ -50,16 +57,20 @@ class InfoSection extends React.Component {
 
         let image = (
             <Col md={6} >
-                {/*
-                //TODO get SVG images
+                <div className={css(styles.textBox)}>
+                    <Image src={this.props.img} responsive />
+                </div>
+		{/*
                 <ResponsiveEmbed a16by9>
                     <embed type="image/svg+xml" src={this.props.img}/>
                 </ResponsiveEmbed>
-                */}
+                
 
+		
                 <div className={css(styles.textBox)}>
                 <h1>IMAGE HERE</h1>
                 </div>
+		*/}
             </Col>
         );
 
