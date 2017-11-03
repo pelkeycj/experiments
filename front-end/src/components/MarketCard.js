@@ -19,6 +19,10 @@ const styles = StyleSheet.create({
     rate: {
         textAlign: 'right',
         display: 'inline'
+    },
+
+    p: {
+        textAlign: 'left'
     }
 });
 
@@ -33,12 +37,14 @@ class MarketCard extends React.Component {
                         <ListGroupItem>
                             <Row>
                                 <Col md={6} className={css(styles.exchange)}>
-                                    {exRate['exchange'] + ':'}
+                                    <p style={{textAlign: 'left'}}>{exRate['exchange'] + ':'}</p>
                                 </Col>
                                 <Col md={6} className={css(styles.rate)}>
-                                    {exRate['rate']}
+                                    <p style={{textAlign: 'right'}}>{exRate['rate']}</p>
                                 </Col>
                             </Row>
+
+
                         </ListGroupItem>
                     );
                 })}

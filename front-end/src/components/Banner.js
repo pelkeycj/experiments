@@ -8,8 +8,6 @@ import { Button } from 'react-bootstrap';
 import Colors from '../static/colors';
 import Strings from '../static/strings';
 
-
-//TODO probably want to change font used, maybe change primary/secondary colors
 const styles = StyleSheet.create({
    section: {
     background: Colors.primary,
@@ -53,8 +51,7 @@ const styles = StyleSheet.create({
 
 
 
-// this should be a large purple div containing a call to action and a 'get-started' button
-// TODO for now, get-started will do nothing, the demo link is the main feature of this experiment
+// for now, get-started will do nothing, the demo link is the main feature of this experiment
 class Banner extends React.Component {
     render() {
         return (

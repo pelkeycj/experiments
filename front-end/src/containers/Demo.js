@@ -15,6 +15,10 @@ import MarketCard from "../components/MarketCard";
 const styles = StyleSheet.create({
    cardCol: {
        margin: 'auto',
+       display: 'inline-flex',
+       paddingTop: '50px',
+       paddingLeft: '100px',
+       paddingRight: '100px',
    }
 });
 
@@ -25,7 +29,30 @@ class Demo extends React.Component {
         super();
         this.state = {
             markets: MarketMock.data1,
+            mockData: 'data1',
             userFollowing: UserMock.defaultFollowing,
+            lastUpdate: Date.now()
+        };
+       // this.toggleMockData = this.bind(this);
+        this.toggleMockData = this.toggleMockData.bind(this);
+        setInterval(this.toggleMockData, 5000);
+    }
+
+    toggleMockData() {
+        let now = Date.now();
+        console.log(now);
+        if ((now - this.state.lastUpdate) > 4000) {
+            let newData;
+            let newMock;
+            if (this.state.mockData === 'data1') {
+                newData = MarketMock.data2;
+                newMock = 'data2';
+            }
+            else {
+                newData = MarketMock.data1;
+                newMock = 'data1';
+            }
+            this.setState({lastUpdate: now, markets: newData, mockData: newMock})
         }
     }
 
@@ -66,23 +93,9 @@ class Demo extends React.Component {
         return {show: marketsToShow, hide: marketsToHide};
     }
 
-    createFormOptions(markets) {
-        let options = [];
-        markets.map((market) => {
-            let info = market['exchange'] + ':' + market['pair'];
-            options.push({value: info, label: info});
-        });
-
-        console.log(options);
-        return options;
-    }
-
-    handleSelectChange(value) {
-        this.setState({ value });
-        console.log(value);
-    }
-
     render() {
+        this.toggleMockData();
+        console.log(this.state.mockData);
         let markets = this.process();
         let shownMarkets = markets['show'];
         let hiddenMarkets = markets['hide'];
@@ -90,27 +103,22 @@ class Demo extends React.Component {
         return (
             <div>
                 <Navigation/>
-                <div>
-                    <h1 style={{marginTop: '100px'}}>Demo page coming soon.</h1>
-                    <h3>TODOs: </h3>
-                    <ul>
-                        <li>create two sets of mock data to alternate between</li>
-                        <li>display mock data using cards?</li>
-                        <li>maintain a mock list of followed assetpairs so that they can be modified in demo?</li>
-                    </ul>
+                <div style={{marginLeft: '50px'}}>
+                    <h1 style={{marginTop: '70px'}}>Watching (demo)</h1>
+                    <p>The values of the watched markets change every 5 seconds with mock data</p>
                 </div>
 
 
-                <Row>
+                <div>
                     {/* For each shown market, create a Market */}
                     {Object.keys(shownMarkets).map(key => {
                         return (
-                          <Col md={3} className={css(styles.cardCol)}>
+                          <div className={css(styles.cardCol)}>
                               <MarketCard pair={key} exchangeData={shownMarkets[key]} />
-                          </Col>
+                          </div>
                         );
                     })}
-                </Row>
+                </div>
             </div>
         );
     }

@@ -4,14 +4,19 @@
 
 import React from 'react';
 import { css, StyleSheet } from 'aphrodite';
-import { Image, ResponsiveEmbed, Row, Col } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
+import { Row, Col } from 'react-grid-system';
 
 
 const styles = StyleSheet.create({
     section: {
-        height: "300px",
+        height: '400px',
         textAlign: 'center',
         position: 'relative',
+    },
+
+    centerContentsVertical: {
+
     },
 
     textBox: {
@@ -22,6 +27,7 @@ const styles = StyleSheet.create({
         right: '0',
         width: '80%',
         height: '50%',
+        marginTop: 'auto',
         margin: 'auto',
         textAlign: 'left',
         padding: '10%',
@@ -48,7 +54,7 @@ class InfoSection extends React.Component {
 
     render() {
         let text = (
-            <Col md={6}>
+            <Col md={6} className={css(styles.centerContentsVertical)}>
                 <div className={css(styles.textBox)}>
                     <h2>{this.props.text}</h2>
                 </div>
@@ -56,21 +62,10 @@ class InfoSection extends React.Component {
         );
 
         let image = (
-            <Col md={6} >
+            <Col md={6} className={css(styles.centerContentsVertical)} >
                 <div className={css(styles.textBox)}>
                     <Image src={this.props.img} responsive />
                 </div>
-		{/*
-                <ResponsiveEmbed a16by9>
-                    <embed type="image/svg+xml" src={this.props.img}/>
-                </ResponsiveEmbed>
-                
-
-		
-                <div className={css(styles.textBox)}>
-                <h1>IMAGE HERE</h1>
-                </div>
-		*/}
             </Col>
         );
 
